@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(☝◞‸◟)☞ ʚ(*´꒳`*)ɞ ლ(´ڡ`ლ)</title>
+
+    <script>
+        function coletaDadosFeet(){
+            var valor = window.prompt("Insira o valor em Pés a ser convertido: ");
+            conversorFeet(valor);
+        }
+
+        function conversorFeet(ft){
+            var metros = ft/3.2808;
+            document.getElementById("answerFeet").innerHTML = ft + " pés ➤ " + metros.toFixed(2) + "m";
+        }
+
+        function coletaDadosMilha(){
+            var valor = window.prompt("Insira o valor em Milhas a ser convertido: ");
+            conversorMilha(valor);
+        }
+
+        function conversorMilha(milha){
+            var km = milha/0.62137;
+            document.getElementById("answerMiles").innerHTML = milha + " Milhas ➤ " + km.toFixed(2) + "km";
+        }
+
+        function coletaDadosGalao(){
+            var valor = window.prompt("Insira o valor em Milhas a ser convertido: ");
+            conversorGalao(valor);
+        }
+
+        function conversorGalao(gal){
+            var litros = gal/0.26417;
+            document.getElementById("answerLitro").innerHTML = gal + " Galões ➤ " + litros.toFixed(2) + "L";
+        }
+
+        function creditos(){
+            var x = document.getElementById("footer");
+            if (x.style.display === "none") {
+                x.style.display = "flex";
+            } 
+            else {
+                x.style.display = "none";
+            }
+        }
+
+        function dunkHidden(){
+            var x = document.getElementById("dunk");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } 
+            else {
+                x.style.display = "none";
+            }
+        }
+
+        //fazer função do dunk perguntando e respostas (Kobo e suco)
+        function dunk(){
+            var resposta = window.confirm("Tu parece estar com sede, aceitas um sucão?\nApenas uma pila!");
+
+            if(resposta == true){
+                var imagem = document.getElementById("mestre");
+                imagem.src = "dmsucao.png"
+
+                document.getElementById("txtdunk").innerHTML = "Eh noess :DD"
+            }
+            else{
+                window.alert("O Kobo viu sua ação e a decretou como um crime hediondo!\nPREPARE-SE PARA A INVASÃO!!!11!!!!111!")
+
+                document.getElementById("kobotexto1").innerHTML = "Facção Kobo 💪 O bonde dos Kobolds ataca novamente 🤡🤡🤡 vai chorar Draconato? 😭😭 Kobo acima de tudo, Dunk encima de todos 👊👊 tá em shock ⚡⚡ Lagartixa 🤫🤫😳😳😳😳 fica Flinstons aí Konstantine mão de alface 👋👋🥗🥗 Avante Dunk 🏁🏁🏁🧃🧃🧃 VAI TOMA NO CU DRAGÃO"
+
+                document.getElementById("kobotexto2").innerHTML = "🐲🐲🐲"
+
+                document.getElementById("kobotexto3").innerHTML = "Peixes para Fezes"
+
+                document.getElementById("kobotexto4").innerHTML = "Patadas para Corridas"
+
+                document.getElementById("kobotexto5").innerHTML = "Joias para nós"
+
+                document.getElementById("kobotexto6").innerHTML = "VAI SI FUDÊ PORA"
+
+                document.getElementById("kobotexto7").innerHTML = "-Kriev, u Grandiosu"
+
+                document.title = "BASE DO KOBO 🐲";
+
+                document.getElementById("dunk").style.display = "none"
+
+                document.getElementById("secret").style.display = "none"
+
+                document.getElementById("dirso").src = "kriev.jpg"
+
+                document.getElementById("mestre").src = "kobolds.gif"
+            }
+        }
+    </script>
+
+</head>
+<body bgcolor="#010344">
+
+    <div id="conteudoCentral">
+        <header>
+            <h1 id="kobotexto1">Site pra ajudar lo maestro 👌</h1>
+            <h3 id="kobotexto2">Eh noes kkkkk</h3>
+            <img src="dm.png" alt="Imagem do mestre sofrendo" id="mestre">
+            <div id="botoeslegais">
+                <button onclick="creditos()" >Créditos</button>
+                <span id="secret">
+                    <span style="color: yellow;"> - </span>
+                    <button onclick="dunkHidden()">???</button>
+                </span>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <h2 id="kobotexto3">Pés para Metros.</h2>
+                <p id="answerFeet"></p>
+                <button onclick="coletaDadosFeet()" class="botao"> <b>Converter! ⭐</b></button>
+            </section>
+
+            <section>
+                <h2 id="kobotexto4">Milhas para Kilometros.</h2>
+                <p id="answerMiles"></p>
+                <button onclick="coletaDadosMilha()" class="botao"> <b>Converter! ⭐</b></button>
+            </section>
+
+            <section>
+                <h2 id="kobotexto5">Galões para Litros.</h2>
+                <p id="answerLitro"></p>
+                <button onclick="coletaDadosGalao()" class="botao"> <b>Converter! ⭐</b></button>
+            </section>
+
+            <div id="dunk">
+                <img src="Dunk.jpg" alt="Kobold mais lindo de todos" onclick="dunk()" width=250px;
+                height=250px;>
+                <p id="txtdunk" style="color: white;"> <i>Fala chefe!</i></p>
+            </div>
+            
+        </main>
+    </div>
+
+    <footer id="footer">
+        <div>
+            <img src="dirso.jpg" alt="foto do dirso" width="250px" height="250px" id="dirso">
+            <p id="kobotexto6">Site feito pelo mais badalado de toda terra média:</p>
+            <p><span style="color: yellow; font-family: papyrus;" id="kobotexto7"> <b>Adilson Bacamarte</b></span></p>
+        </div>
+    </footer>
+</body>
+</html>

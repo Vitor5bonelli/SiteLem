@@ -1,0 +1,84 @@
+#conteudoCentral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dunk {
+    display: none;
+    border: none;
+    margin-top: 25px;
+}
+
+footer {
+   display: none;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   margin: 25px;
+}
+
+h1 {
+    font-family: "Franklin Gothic Medium";
+    color: white;
+    max-width: 700px;
+}
+
+h2 {
+    font-family: "Consolas";
+    color: white;
+}
+
+h3 {
+    font-family: "Impact";
+    color: white;
+    max-width: 700px;
+}
+
+section button {
+    color: #D44D00;
+    background-color: #010344;
+    border: none;
+}
+
+.botao:hover {
+    color: white;
+}
+
+#botoeslegais {
+    margin-left: 180px;
+}
+
+#botoeslegais button {
+    color: yellow;
+    background-color: #010344;
+    font-family: "Comic Sans MS";
+    border: none;
+}
+
+#botoeslegais button:hover {
+    color: white;
+}
+
+img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    float: right;
+    margin-right: 25px;
+}
+
+section {
+    width: 300px;
+    border-bottom: solid black 3px;
+    border-right: solid black 3px;
+}
+
+/* Elemento com resposta */
+section p {
+    color: white;
+    font-size: 21px;
+}
